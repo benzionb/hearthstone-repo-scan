@@ -1,0 +1,513 @@
+{
+  "generated_at": "2026-02-18T00:00:00Z",
+  "entries": [
+    {
+      "repo": "BGSimulator",
+      "repo_url": "https://github.com/yossielimelech/BGSimulator.git",
+      "org": "yossielimelech",
+      "role": "historical_full_simulation_reference",
+      "capability_scores": {
+        "live_fidelity": 0.12,
+        "simulation_coverage": 0.46,
+        "data_freshness": 0.06,
+        "parser_strength": 0.18,
+        "ml_integration": 0.08
+      },
+      "must_use_for": [
+        "old_sim_benchmark_baseline"
+      ],
+      "risk_flags": [
+        "Stale 2020-era mechanics",
+        "No maintained patch update path",
+        "Limited BG rule parity"
+      ],
+      "confidence": 0.22
+    },
+    {
+      "repo": "DeepBattler",
+      "repo_url": "https://github.com/william-Dic/DeepBattler.git",
+      "org": "william-Dic",
+      "role": "live_state_plugin_and_agent_harness",
+      "capability_scores": {
+        "live_fidelity": 0.62,
+        "simulation_coverage": 0.07,
+        "data_freshness": 0.39,
+        "parser_strength": 0.51,
+        "ml_integration": 0.85
+      },
+      "must_use_for": [
+        "live_snapshot_ingest",
+        "action_prompt_orchestration_patterns"
+      ],
+      "risk_flags": [
+        "Windows + HDT coupling",
+        "Research prototype, limited portability"
+      ],
+      "confidence": 0.66
+    },
+    {
+      "repo": "HSTracker",
+      "repo_url": "https://github.com/HearthSim/HSTracker.git",
+      "org": "HearthSim",
+      "role": "overlay_state_ingest_and_overrides",
+      "capability_scores": {
+        "live_fidelity": 0.74,
+        "simulation_coverage": 0.1,
+        "data_freshness": 0.67,
+        "parser_strength": 0.64,
+        "ml_integration": 0.52
+      },
+      "must_use_for": [
+        "overlay_state_streaming",
+        "overrides_ingest"
+      ],
+      "risk_flags": [
+        "Large native codebase; platform-specific coupling"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "repo": "HearthDb",
+      "repo_url": "https://github.com/HearthSim/HearthDb.git",
+      "org": "HearthSim",
+      "role": "canonical_metadata_and_ids",
+      "capability_scores": {
+        "live_fidelity": 0.64,
+        "simulation_coverage": 0.08,
+        "data_freshness": 0.55,
+        "parser_strength": 0.72,
+        "ml_integration": 0.36
+      },
+      "must_use_for": [
+        "card_id_normalization",
+        "bg_pool_tag_queries",
+        "bacon_pool_filters"
+      ],
+      "risk_flags": [
+        "Data refresh depends on update pipeline",
+        "No behavior runtime"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "repo": "Hearthstone-Deck-Tracker",
+      "repo_url": "https://github.com/HearthSim/Hearthstone-Deck-Tracker.git",
+      "org": "HearthSim",
+      "role": "overlay_state_ingest_and_overrides",
+      "capability_scores": {
+        "live_fidelity": 0.7,
+        "simulation_coverage": 0.09,
+        "data_freshness": 0.64,
+        "parser_strength": 0.63,
+        "ml_integration": 0.51
+      },
+      "must_use_for": [
+        "battlegrounds_tag_overrides",
+        "live_anomaly_and_tier_rules"
+      ],
+      "risk_flags": [
+        "Cross-platform behavior complexity"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "repo": "SabberStone",
+      "repo_url": "https://github.com/HearthSim/SabberStone.git",
+      "org": "HearthSim",
+      "role": "legacy_generic_simulator",
+      "capability_scores": {
+        "live_fidelity": 0.08,
+        "simulation_coverage": 0.18,
+        "data_freshness": 0.05,
+        "parser_strength": 0.26,
+        "ml_integration": 0.03
+      },
+      "must_use_for": [
+        "generic_engine_design_inspiration"
+      ],
+      "risk_flags": [
+        "No concrete BG buy-phase layer",
+        "Stale data"
+      ],
+      "confidence": 0.34
+    },
+    {
+      "repo": "UnityPack",
+      "repo_url": "https://github.com/Zero-to-Heroes/UnityPack.git",
+      "org": "Zero-to-Heroes",
+      "role": "unity_asset_extraction_tool",
+      "capability_scores": {
+        "live_fidelity": 0.05,
+        "simulation_coverage": 0.01,
+        "data_freshness": 0.05,
+        "parser_strength": 0.18,
+        "ml_integration": 0.03
+      },
+      "must_use_for": [
+        "offline_asset_recovery"
+      ],
+      "risk_flags": [
+        "Unmaintained",
+        "Only low-level binary parsing"
+      ],
+      "confidence": 0.22
+    },
+    {
+      "repo": "api-simulate-battlegrounds-battle",
+      "repo_url": "https://github.com/Zero-to-Heroes/api-simulate-battlegrounds-battle.git",
+      "org": "Zero-to-Heroes",
+      "role": "combat_reference_engine",
+      "capability_scores": {
+        "live_fidelity": 0.42,
+        "simulation_coverage": 0.73,
+        "data_freshness": 0.46,
+        "parser_strength": 0.58,
+        "ml_integration": 0.33
+      },
+      "must_use_for": [
+        "combat_rollout_scoring",
+        "replay_board_state_sim_evaluation"
+      ],
+      "risk_flags": [
+        "No buy-phase/lobby simulation",
+        "Patch assumptions implicit in ref-data dependency"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "repo": "coliseum",
+      "repo_url": "https://github.com/Zero-to-Heroes/coliseum.git",
+      "org": "Zero-to-Heroes",
+      "role": "replay_visualization_frontend",
+      "capability_scores": {
+        "live_fidelity": 0.41,
+        "simulation_coverage": 0.05,
+        "data_freshness": 0.31,
+        "parser_strength": 0.56,
+        "ml_integration": 0.12
+      },
+      "must_use_for": [
+        "replay_rendering_reference",
+        "simulation_output_consumption"
+      ],
+      "risk_flags": [
+        "Deprecated Angular codebase",
+        "Not a source of rules"
+      ],
+      "confidence": 0.49
+    },
+    {
+      "repo": "firestone",
+      "repo_url": "https://github.com/Zero-to-Heroes/firestone.git",
+      "org": "Zero-to-Heroes",
+      "role": "production_overlay_and_workflow_orchestrator",
+      "capability_scores": {
+        "live_fidelity": 0.46,
+        "simulation_coverage": 0.22,
+        "data_freshness": 0.52,
+        "parser_strength": 0.67,
+        "ml_integration": 0.33
+      },
+      "must_use_for": [
+        "service_integration_patterns",
+        "simulation_worker_integration"
+      ],
+      "risk_flags": [
+        "Large app surface; harder to isolate to engine-only logic"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "repo": "firestone-data",
+      "repo_url": "https://github.com/Zero-to-Heroes/firestone-data.git",
+      "org": "Zero-to-Heroes",
+      "role": "static_patch_and_config_feed",
+      "capability_scores": {
+        "live_fidelity": 0.52,
+        "simulation_coverage": 0.08,
+        "data_freshness": 0.34,
+        "parser_strength": 0.28,
+        "ml_integration": 0.12
+      },
+      "must_use_for": [
+        "patch_lookup_seed_input",
+        "tier_anomaly_config_inputs"
+      ],
+      "risk_flags": [
+        "Not a rules engine",
+        "Requires external regeneration to stay current"
+      ],
+      "confidence": 0.71
+    },
+    {
+      "repo": "hearthstone-parser",
+      "repo_url": "https://github.com/Tespa/hearthstone-parser.git",
+      "org": "Tespa",
+      "role": "lightweight_log_parser",
+      "capability_scores": {
+        "live_fidelity": 0.41,
+        "simulation_coverage": 0.08,
+        "data_freshness": 0.12,
+        "parser_strength": 0.73,
+        "ml_integration": 0.22
+      },
+      "must_use_for": [
+        "legacy_log_watch_fallback",
+        "event_stream_parsing"
+      ],
+      "risk_flags": [
+        "Maintenance stale",
+        "Limited modern BG coverage"
+      ],
+      "confidence": 0.51
+    },
+    {
+      "repo": "hearthstonejson-client",
+      "repo_url": "https://github.com/HearthSim/hearthstonejson-client.git",
+      "org": "HearthSim",
+      "role": "raw_card_metadata_fetch_client",
+      "capability_scores": {
+        "live_fidelity": 0.58,
+        "simulation_coverage": 0.05,
+        "data_freshness": 0.79,
+        "parser_strength": 0.4,
+        "ml_integration": 0.08
+      },
+      "must_use_for": [
+        "dynamic_card_dataset_refresh"
+      ],
+      "risk_flags": [
+        "No behavioral semantics"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "repo": "hs-game-converter-csharp-port",
+      "repo_url": "https://github.com/Zero-to-Heroes/hs-game-converter-csharp-port.git",
+      "org": "Zero-to-Heroes",
+      "role": "replay_converter",
+      "capability_scores": {
+        "live_fidelity": 0.61,
+        "simulation_coverage": 0.07,
+        "data_freshness": 0.22,
+        "parser_strength": 0.66,
+        "ml_integration": 0.21
+      },
+      "must_use_for": [
+        "BG replay event parsing"
+      ],
+      "risk_flags": [
+        "C#/.NET runtime coupling",
+        "Parser-only scope"
+      ],
+      "confidence": 0.65
+    },
+    {
+      "repo": "hs-game-entities",
+      "repo_url": "https://github.com/Zero-to-Heroes/hs-game-entities.git",
+      "org": "Zero-to-Heroes",
+      "role": "protocol_entity_schema",
+      "capability_scores": {
+        "live_fidelity": 0.49,
+        "simulation_coverage": 0.04,
+        "data_freshness": 0.09,
+        "parser_strength": 0.6,
+        "ml_integration": 0.25
+      },
+      "must_use_for": [
+        "replay_xml_modeling",
+        "cross-lang type alignment"
+      ],
+      "risk_flags": [
+        "Sparse updates"
+      ],
+      "confidence": 0.47
+    },
+    {
+      "repo": "hs-reference-data",
+      "repo_url": "https://github.com/Zero-to-Heroes/hs-reference-data.git",
+      "org": "Zero-to-Heroes",
+      "role": "bg_reference_rules_data",
+      "capability_scores": {
+        "live_fidelity": 0.78,
+        "simulation_coverage": 0.31,
+        "data_freshness": 0.74,
+        "parser_strength": 0.61,
+        "ml_integration": 0.21
+      },
+      "must_use_for": [
+        "patch_manifest_seed",
+        "tier/race/card-rule lookup"
+      ],
+      "risk_flags": [
+        "Not a rules executor; requires engine layer"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "repo": "hs-reference-data-parser",
+      "repo_url": "https://github.com/Zero-to-Heroes/hs-reference-data-parser.git",
+      "org": "Zero-to-Heroes",
+      "role": "reference_data_etl",
+      "capability_scores": {
+        "live_fidelity": 0.47,
+        "simulation_coverage": 0.09,
+        "data_freshness": 0.12,
+        "parser_strength": 0.64,
+        "ml_integration": 0.12
+      },
+      "must_use_for": [
+        "normalizing external feeds into local JSON"
+      ],
+      "risk_flags": [
+        "Legacy java build/setup",
+        "Limited active maintenance"
+      ],
+      "confidence": 0.39
+    },
+    {
+      "repo": "hs-replay-xml-parser",
+      "repo_url": "https://github.com/Zero-to-Heroes/hs-replay-xml-parser.git",
+      "org": "Zero-to-Heroes",
+      "role": "replay_event_to_model_parser",
+      "capability_scores": {
+        "live_fidelity": 0.68,
+        "simulation_coverage": 0.16,
+        "data_freshness": 0.23,
+        "parser_strength": 0.74,
+        "ml_integration": 0.36
+      },
+      "must_use_for": [
+        "replay_conformance_input"
+      ],
+      "risk_flags": [
+        "Parser output quality tied to upstream logs"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "repo": "hsdata",
+      "repo_url": "https://github.com/HearthSim/hsdata.git",
+      "org": "HearthSim",
+      "role": "raw_client_data_dump",
+      "capability_scores": {
+        "live_fidelity": 0.72,
+        "simulation_coverage": 0.03,
+        "data_freshness": 0.36,
+        "parser_strength": 0.55,
+        "ml_integration": 0.09
+      },
+      "must_use_for": [
+        "authoritative_card_and_locale_baseline",
+        "tag recovery"
+      ],
+      "risk_flags": [
+        "Manual refresh + large binary deltas"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "repo": "hsproto",
+      "repo_url": "https://github.com/HearthSim/hsproto.git",
+      "org": "HearthSim",
+      "role": "protocol_schema_reference",
+      "capability_scores": {
+        "live_fidelity": 0.59,
+        "simulation_coverage": 0.02,
+        "data_freshness": 0.06,
+        "parser_strength": 0.63,
+        "ml_integration": 0.17
+      },
+      "must_use_for": [
+        "packet/replay field mapping"
+      ],
+      "risk_flags": [
+        "Very old schema snapshot"
+      ],
+      "confidence": 0.52
+    },
+    {
+      "repo": "hsreplay-xml",
+      "repo_url": "https://github.com/HearthSim/hsreplay-xml.git",
+      "org": "HearthSim",
+      "role": "replay_format_spec",
+      "capability_scores": {
+        "live_fidelity": 0.57,
+        "simulation_coverage": 0.02,
+        "data_freshness": 0.16,
+        "parser_strength": 0.58,
+        "ml_integration": 0.09
+      },
+      "must_use_for": [
+        "xml schema interoperability"
+      ],
+      "risk_flags": [
+        "No executable parser"
+      ],
+      "confidence": 0.55
+    },
+    {
+      "repo": "python-hearthstone",
+      "repo_url": "https://github.com/HearthSim/python-hearthstone.git",
+      "org": "HearthSim",
+      "role": "parser_and_schema_library",
+      "capability_scores": {
+        "live_fidelity": 0.66,
+        "simulation_coverage": 0.1,
+        "data_freshness": 0.71,
+        "parser_strength": 0.8,
+        "ml_integration": 0.48
+      },
+      "must_use_for": [
+        "replay_parsing",
+        "entity modeling",
+        "bg enum handling"
+      ],
+      "risk_flags": [
+        "No behavior engine"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "repo": "python-hslog",
+      "repo_url": "https://github.com/HearthSim/python-hslog.git",
+      "org": "HearthSim",
+      "role": "log_parser_and_exporter",
+      "capability_scores": {
+        "live_fidelity": 0.64,
+        "simulation_coverage": 0.11,
+        "data_freshness": 0.52,
+        "parser_strength": 0.79,
+        "ml_integration": 0.58
+      },
+      "must_use_for": [
+        "live_log_to_state pipeline"
+      ],
+      "risk_flags": [
+        "Python-only and focused on parser layer"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "repo": "stone_ground_hearth_battles",
+      "repo_url": "https://github.com/JDBumgardner/stone_ground_hearth_battles",
+      "org": "JDBumgardner",
+      "role": "legacy_full_simulator_reference",
+      "capability_scores": {
+        "live_fidelity": 0.09,
+        "simulation_coverage": 0.62,
+        "data_freshness": 0.06,
+        "parser_strength": 0.31,
+        "ml_integration": 0.41
+      },
+      "must_use_for": [
+        "old_rules_architecture"
+      ],
+      "risk_flags": [
+        "Single outdated snapshot",
+        "Hardcoded patch data"
+      ],
+      "confidence": 0.18
+    }
+  ]
+}

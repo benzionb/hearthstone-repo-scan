@@ -1,0 +1,8 @@
+# Ignore all cloned repos; keep only research artifacts in this mirror repo
+*
+!research/
+!research/**
+!README.md
+!.gitignore
+!.github/
+!AGENTS.md
