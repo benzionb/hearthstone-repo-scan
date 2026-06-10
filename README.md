@@ -10,6 +10,6 @@ This repository captures the current local repository-corpus outputs for the Bat
 
 ## Source
 The local source clone workspace lives at:
-`/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan`
+`/Users/zion/Projects/Hearthstone Research/bg_repo_scan`
 
 This parent directory also contains all downloaded repository copies for local analysis. They are intentionally excluded from git.

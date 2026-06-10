@@ -34,21 +34,21 @@ Remaining adjustment needed for strict consistency:
 ## Practical use by category
 
 ### 1) Live-state ingestion / coaching loop (sim-to-real)
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/DeepBattler`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/Hearthstone-Deck-Tracker`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/HSTracker`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/firestone`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/DeepBattler`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/Hearthstone-Deck-Tracker`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/HSTracker`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/firestone`
 
 Use for live log/event capture, in-client state semantics, UX prompting patterns, and state-surface flows for real-time recommendation engines.
 - Why this is buy-phase relevant: informs what players can and cannot do in tavern timing windows, and provides the real-state feedback loop for state drift detection.
 - Why this is live-data relevant: highest-confidence path for live ingestion, but needs platform-normalization and versioned parsers.
 
 ### 2) Canonical rules / patch metadata layer
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hs-reference-data`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/firestone-data`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hsdata`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hearthstonejson-client`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/HearthDb`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hs-reference-data`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/firestone-data`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hsdata`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hearthstonejson-client`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/HearthDb`
 
 Use for canonical IDs, card/minion definitions, patch metadata, override ingestion, and long-lived provenance.
 - Why this is buy-phase relevant: this is the only practical metadata foundation for card pool, rarity bands, tribe and cost rules, and core action legality baseline.
@@ -57,11 +57,11 @@ Use for canonical IDs, card/minion definitions, patch metadata, override ingesti
 - What it doesn't fully give: complete live patch semantics by itself.
 
 ### 3) Replay + parsing + telemetry for training/eval data
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/python-hslog`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hs-replay-xml-parser`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hsreplay-xml`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hs-game-converter-csharp-port`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/python-hearthstone`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/python-hslog`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hs-replay-xml-parser`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hsreplay-xml`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hs-game-converter-csharp-port`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/python-hearthstone`
 
 Use for fixture extraction, schema stabilization, replay replayability, and reproducible model evaluation sets.
 - Why this is buy-phase relevant: creates reference fixtures for conformance tests on tavern legality and action effects.
@@ -70,9 +70,9 @@ Use for fixture extraction, schema stabilization, replay replayability, and repr
 - What it doesn't fully give: patch-aware live patch correction without external overrides.
 
 ### 4) Combat + full-lobby behavior (with buy-phase interactions)
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/api-simulate-battlegrounds-battle`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/BGSimulator`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/stone_ground_hearth_battles`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/api-simulate-battlegrounds-battle`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/BGSimulator`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/stone_ground_hearth_battles`
 
 Use for combat oracles, elimination/round sequencing, and full-lobby architecture references.
 - Why this is buy-phase relevant: provides reference behavior for phase transitions and post-buy resolution effects.
@@ -81,15 +81,15 @@ Use for combat oracles, elimination/round sequencing, and full-lobby architectur
 - What they don't fully give: current turn-by-turn tavern-phase parity.
 
 ### 5) Evaluation and protocol support
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/coliseum`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hsproto`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/hs-game-entities`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/coliseum`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hsproto`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/hs-game-entities`
 
 Use for visualization/debugging, serialization consistency, and model-facing state contracts.
 
 ### 6) Low-leverage / archive-first repos
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/UnityPack`
-- `/Users/zion_1/Projects/Hearthstone Research/bg_repo_scan/SabberStone`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/UnityPack`
+- `/Users/zion/Projects/Hearthstone Research/bg_repo_scan/SabberStone`
 
 Use only when deeper extraction or very specific legacy parity comparison is needed.
 
