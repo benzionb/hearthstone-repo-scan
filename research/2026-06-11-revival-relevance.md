@@ -25,7 +25,7 @@ The sweep's core conclusion was **correct and is now vindicated**: no OSS buy-ph
 
 | Clone | Status | Why it matters |
 |-------|--------|----------------|
-| `api-simulate-battlegrounds-battle` | **GitHub repo 404** (SSH+HTTPS, both names) | The npm package `@firestone-hs/simulate-bgs-battle` is still actively published (1.1.717, 2026-06-03) but ships **dist-only JS**. This local clone (v1.1.684, Feb 11) is the only surviving TypeScript **source** of the combat engine SuperBG delegates to. If sim behavior ever needs source-level debugging, this is it. Recommend: push a private mirror to GitHub for off-machine safety. |
+| `api-simulate-battlegrounds-battle` | **GitHub repo 404** (SSH+HTTPS, both names) | The npm package `@firestone-hs/simulate-bgs-battle` is still actively published (1.1.717, 2026-06-03) but ships **dist-only JS**. This local clone (v1.1.684, Feb 11, depth-1 shallow — no history) is the only surviving TypeScript **source** of the combat engine SuperBG delegates to. ARCHIVED 2026-06-11: pushed to github.com/benzionb/simulate-bgs-battle-mirror (private) and restore-tested bundle at research/archives/. |
 | `firestone-data` | **Remote dead** | Firestone static backend data (patches.json, AI decks). Smaller stakes, but not re-clonable. |
 
 ## Workspace cleanup (2026-06-11)
